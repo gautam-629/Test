@@ -1,0 +1,46 @@
+* {
+	font-family: 'Plus Jakarta Sans', sans-serif;
+	/* font-weight: normal;
+	font-size: 16px; */
+}
+:root {
+	--orange: #f35a1c;
+	--white: #fff;
+	--black: #323131;
+	--boxShadow: 0px 19px 60px rgb(0 0 0 / 8%);
+	--primary: #f7941d;
+	--secondary: #606060;
+}
+body {
+	margin: 0;
+}
+button {
+	justify-content: center;
+	align-items: center;
+	padding: 14px 32px;
+	cursor: pointer;
+	border-radius: 5px;
+}
+.btn-primary {
+	background-color: var(--primary);
+	border: 1px solid var(--primary);
+}
+.titleSub {
+	background: linear-gradient(270deg, #ee6137 0%, #fdc310 100%);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	text-transform: uppercase;
+	font-style: italic;
+	font-size: 16px;
+	font-weight: 700;
+	line-height: 24px;
+}
+.titleMain {
+	color: var(--black-black-500, #111);
+	font-size: 36px;
+	font-weight: 700;
+	line-height: 48px;
+}
+.App {
+	position: relative;
+}

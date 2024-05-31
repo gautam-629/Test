@@ -1,0 +1,13 @@
+export { default as Header } from './Header/Header';
+export { default as TopFooter } from './Footer/TopFooter/TopFooter';
+export { default as BottomFooter } from './Footer/BottomFooter/BottomFooter';
+export { default as Footer } from './Footer/Footer';
+export { default as About } from './About/About';
+export { default as Booking } from './Booking/Booking';
+export { default as Services } from './Services/Services';
+export { default as Gallery } from './Gallery/Gallery';
+export { default as Stats } from './Stats/Stats';
+export { default as Testimonial } from './Home/Testimonial/Testimonial';
+export { default as Review } from './Review/Review';
+export { default as LoadingSpinner } from './Spinner/LoadingSpinner';
+export { default as Boost } from './Boost/Boost';

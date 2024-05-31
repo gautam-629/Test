@@ -1,0 +1,148 @@
+.comment-form-wrapper {
+	margin-top: 46px ;
+	border-bottom: 1px solid #E4E4E4;
+	padding-bottom: 64px;
+}
+.comment-form-wrapper p {
+	margin-top:0;
+}
+.comment-form {
+	display: flex;
+	flex-direction: column;
+	gap: 24px;
+	margin: 32px 0 0;
+}
+.form-control-dark {
+	border: 1px solid var(--secondary);
+	padding: 12px;
+	font-size: 16px;
+	border-radius: 5px;
+	outline: none;
+}
+.form-control-dark:focus{
+	border: 1px solid var(--primary); ;
+}
+.text-red {
+	color: red;
+}
+.checkbox-group {
+	display: flex;
+	gap: 10px;
+	align-items: start;
+}
+
+.comment-box {
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+	background-color: #f9f9f9;
+	border-radius: 24px;
+	padding: 24px 36px;
+	justify-content: space-between;
+	margin-top: 40px;
+}
+.comment-bold {
+	font-weight: 700;
+}
+.text-bolder {
+	font-weight: 700;
+	font-size: 18px;
+}
+.comment-question {
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	margin: 40px 0;
+	gap: 8px;
+}
+.text-primary {
+	color: var(--primary);
+}
+.response-div {
+	display: flex;
+	justify-content: space-between;
+	padding-top: 30px;
+	gap: 66px;
+}
+.response-row {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	cursor: pointer;
+	width: 101px;
+	height:102px;
+
+}
+.response-icon {
+	width: 50px;
+	height: 50px;
+	padding-top:10px
+}
+
+.response-icon:hover {
+	transform: scale(1.1); /* Increase size on hover */
+}
+
+.writer-wrapper {
+	margin: 70px 0;
+}
+.writer-image {
+	border-radius: 50%;
+	height: 80px;
+	width: 80px;
+}
+.writer-content {
+	display: flex;
+	flex-direction: column;
+	gap: 6px;
+}
+.writer-content-row {
+	display: flex;
+	justify-content: space-between;
+}
+.writer-designation {
+	width: 80%;
+}
+.text-uppercase {
+	text-transform: capitalize;
+}
+.text-response {
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 28px;
+	margin: 10px;
+}
+
+.response-row {
+    cursor: pointer;
+   
+}
+
+.blog-comments-container h2{
+	margin-top: 0;
+}
+
+.response-row.active {
+    background-color: #F7941D14; 
+    border: 1px solid #F7941D; 
+	color: #F7941D;
+	border-radius: 5px;
+}
+
+@media screen and (max-width: 768px) {
+	.response-div {
+		flex-wrap: wrap;
+		gap: 10px;
+	}
+}
+@media screen and (max-width: 1024px) {
+	.response-div {
+		flex-wrap: wrap;
+		gap: 10px;
+	}
+}
+@media screen and (min-width: 1024px) {
+	.checkbox-group {
+		align-items: center;
+	}
+}

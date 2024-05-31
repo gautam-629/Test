@@ -1,0 +1,79 @@
+/* Boost Section */
+.boost {
+	padding: 40px 22px;
+}
+.boost__header {
+	width: 100%;
+}
+.boost__content {
+	display: flex;
+	margin-top: 48px;
+	gap: 32px;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+.boostCard {
+	display: flex;
+	flex-direction: column;
+}
+.boostCard__title {
+	font-size: 20px;
+	font-weight: 600;
+	line-height: 28px;
+	padding: 22px 0 16px 0;
+}
+.boostCard__desc {
+	font-weight: 400;
+	line-height: 25px;
+	color: #606060;
+	font-size: 16px;
+}
+
+.boost__icons {
+	width: 40px;
+	height: 40px;
+	color: var(--primary);
+}
+
+.boost-career {
+	background: #fffbf6;
+}
+
+@media screen and (min-width: 768px) {
+	.boost__header {
+		width: 70%;
+	}
+	.boost__content {
+		justify-content: space-between;
+	}
+	.boostCard {
+		width: 340px;
+	}
+}
+
+@media screen and (min-width: 1024px) {
+	.boost {
+		padding: 64px 24px;
+	}
+	.boost__header {
+		width: 50%;
+	}
+	.boost__content {
+		justify-content: space-between;
+	}
+	.boostCard {
+		width: 450px;
+	}
+}
+
+@media screen and (min-width: 1440px) {
+	.boost {
+		padding: 95px 120px;
+	}
+	.boost__header {
+		width: 70%;
+	}
+	.boostCard {
+		width: 378px;
+	}
+}

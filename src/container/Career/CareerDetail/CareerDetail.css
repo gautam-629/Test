@@ -1,0 +1,167 @@
+.job {
+	padding: 184px 24px 48px 24px;
+	display: flex;
+	flex-direction: column;
+	gap: 30px;
+}
+.job__left,
+.job__right {
+	border: 1px solid #d6d6d6;
+	display: flex;
+	border-radius: 5px;
+}
+.job__left {
+	padding: 16px;
+	flex-direction: column;
+	gap: 32px;
+}
+.job__Title {
+	font-size: 24px;
+	font-weight: 600;
+	line-height: 36px;
+}
+.job__contentTitle {
+	font-size: 18px;
+	font-weight: 500;
+	line-height: 24px;
+}
+.job__List {
+	/* padding: 12px 0 0 10px; */
+	margin: 0;
+	text-align: justify;
+}
+
+.job__List span{
+		font-size: 14px;
+}
+
+.job__List ol {
+    list-style-type: decimal;
+    padding-left: 20px;
+    width: fit-content;
+}
+
+.job__ListItem {
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 20px;
+}
+.job__right {
+	padding: 16px;
+	flex-direction: column;
+	flex: 1;
+	gap: 24px;
+}
+.job__Form {
+	display: flex;
+	flex-direction: column;
+	gap: 16px;
+}
+.form-control-primary {
+	border: 1px solid #d6d6d6;
+	padding: 6px 16px;
+	font-size: 18px;
+	color: var(--primary);
+	height: 44px;
+	display: flex;
+	outline: none;
+}
+.form-control-primary:hover,
+.form-control-primary:focus {
+	border: 1px solid var(--primary);
+}
+::-webkit-input-placeholder {
+	color: #b0b0b8;
+	font-size: 16px;
+	font-weight: 500;
+}
+.job-text-area {
+	/* padding: 20px 20px 80px 20px; */
+	height: 169px;
+}
+.margin-top {
+	margin-top: 24px;
+}
+
+input#fileInput {
+    display: flex;
+    align-content: center;
+    /* flex-wrap: wrap; */
+    padding: 8px 0px 0px 14px;
+}
+
+.custom-file-input {
+	position: relative;
+	overflow: hidden;
+	display: inline-block;
+  }
+  
+  .custom-file-input input[type="file"] {
+	position: absolute;
+	top: 0;
+	right: 0;
+	margin: 0;
+	padding: 0;
+	font-size: 20px;
+	cursor: pointer;
+	opacity: 0;
+
+  }
+
+
+
+  input::file-selector-button {
+  background-image: linear-gradient(
+    to right,
+    #FFA73D,
+    #FFA73D,
+    #FFA73D 100%,
+    #FFA73D 200%
+  );
+  background-position-x: 0%;
+  background-size: 200%;
+  border: 0;
+  border-radius: 8px;
+  color: #fff;
+  padding: 1rem 1.25rem;
+  text-shadow: 0 1px 1px #333;
+  transition: all 0.25s;
+}
+input::file-selector-button:hover {
+  background-position-x: 100%;
+  
+}
+  
+  
+  
+@media screen and (min-width: 768px) {
+	.job {
+		padding: 184px 24px 64px 24px;
+	}
+	.job__left {
+		padding: 66px 42px;
+	}
+	.job__right {
+		padding: 66px 36px 80px 34px;
+		flex-direction: column;
+		flex: 1;
+		gap: 24px;
+		height: fit-content;
+	}
+}
+
+@media screen and (min-width: 1024px) {
+	.job {
+		padding: 184px 32px 64px 32px;
+		flex-direction: row;
+	}
+	.job__left {
+		width: 50%;
+	}
+}
+
+@media screen and (min-width: 1440px) {
+	.job {
+		padding: 184px 120px 114px 120px;
+	}
+}

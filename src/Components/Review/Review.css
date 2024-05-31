@@ -1,0 +1,133 @@
+.review-wrapper {
+	display: flex;
+	flex-direction: column;
+	padding: 48px 22px;
+	gap: 48px;
+}
+.review-content {
+	display: flex;
+	gap: 26px;
+}
+.reviewCard {
+	display: flex;
+	flex-direction: column;
+	padding: 23px;
+	border: 1px solid #e9e9e9;
+	border-radius: 5px;
+
+}
+.r-image-wrapper {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	height: 16px;
+}
+.reviewCard__Date {
+	font-size: 12px;
+	font-weight: 300;
+	line-height: 20px;
+	color: #111;
+}
+.r-Heading {
+	font-weight: 600;
+	line-height: 18px;
+	font-size: 18px;
+	padding-top: 16px;
+}
+.r-desc {
+	font-size: 14px;
+	font-weight: 300;
+	line-height: 25px;
+	padding: 10px 0 6px 0;
+}
+.r-bottom-wrapper {
+	display: flex;
+	align-items: center;
+	gap: 8px;
+}
+.r-divider {
+	border-top: 1px solid #d9d9d9;
+	width: 60px;
+	padding-bottom: 4px;
+}
+.r-bottom-wrapper img {
+	height: 24px;
+}
+.r-company {
+	font-weight: 500;
+	line-height: 18px;
+}
+.reviewRow-swiper.swiper {
+	display: flex;
+	flex: 1;
+	flex-direction: column;
+	height: 280px;
+	width: 320px;
+}
+.reviewRow-swiper .swiper-wrapper {
+	display: flex;
+	flex: 1;
+	gap: 24px;
+}
+.reviewRow-swiper .swiper-slide {
+	display: flex;
+	flex: 1;
+	width: 100%;
+	margin-right: 0;
+}
+.pagination-bullet {
+	background-color: black;
+	height: 16px;
+	width: 16px;
+}
+.reviewDescription {
+	height: 180px;
+}
+.review-truncated-text {
+	font-size: 16px;
+	display: -webkit-box;
+	-webkit-line-clamp: 7;
+	-webkit-box-orient: vertical;
+	/* overflow: hidden; */
+	width: 100%;
+}
+
+@media screen and (max-width: 768px) {
+	.reviewRow-swiper .swiper-wrapper{
+		gap: 0px;
+	}
+	.reviewCard{
+		width: inherit;
+	}
+}
+@media screen and (min-width: 768px) {
+	.review-wrapper {
+		padding: 22px;
+	}
+	.reviewRow-swiper.swiper-slide {
+		width: 280px;
+	}
+	.reviewCard{
+		width: inherit;
+	}
+	.reviewRow-swiper .swiper-wrapper{
+		gap: 0;
+	}
+
+}
+
+@media screen and (min-width: 1024px) {
+	.review-wrapper {
+		padding: 32px;
+	}
+	.reviewRow-swiper .swiper-wrapper {
+		gap: 0;
+	}
+}
+
+@media screen and (min-width: 1440px) {
+	.review-wrapper {
+		padding: 98px 124px 97px 116px;
+		gap: 56px;
+	}
+}

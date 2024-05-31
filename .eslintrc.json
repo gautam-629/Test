@@ -1,0 +1,18 @@
+{
+	"extends": "next",
+	"rules": {
+	  // Add custom rules here
+	  "semi": ["error", "always"],
+	  "quotes": ["error", "single"],
+	  "react/react-in-jsx-scope": "off",
+	  "jsx-a11y/anchor-is-valid": [
+		"error",
+		{
+		  "components": ["Link"],
+		  "specialLink": ["hrefLeft", "hrefRight"],
+		  "aspects": ["invalidHref", "preferButton"]
+		}
+	  ]
+	}
+  }
+  

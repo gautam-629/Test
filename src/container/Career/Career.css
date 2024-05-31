@@ -1,0 +1,154 @@
+.nav{
+	border-bottom:2px solid rgb(171 145 145 / 20%) !important;
+}
+
+.career {
+	padding: 140px 24px 0 24px;
+	display: flex;
+	flex-direction: column;
+	gap: 48px;
+}
+.career__left,
+.career__right {
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	justify-content: center;
+}
+.career__desc {
+	padding: 16px 12% 48px 0;
+}
+.career__right {
+	height: 612px;
+}
+
+/* Career Table Section */
+.careerTable {
+	padding: 48px 24px;
+	gap: 8px;
+	display: flex;
+	flex-direction: column;
+}
+.careerList {
+	list-style-type: none;
+	display: flex;
+	/* justify-content: space-between; */
+	gap: 36px;
+	border-bottom: 2px solid #9f9f9f45;
+	overflow-x: auto;
+}
+.careerList-item {
+	font-size: 18px;
+	font-weight: 500;
+	line-height: 24px;
+	color: #929292;
+}
+.careerTable__Row {
+	display: flex;
+	justify-content: space-between;
+	border-bottom: 2px solid #9f9f9f45;
+	padding: 24px 0;
+	align-items: center;
+}
+.careerTable__title {
+	display: flex;
+	flex-direction: column;
+	width: 74%;
+	gap: 18px;
+	font-weight: 600;
+	line-height: 22px;
+}
+.careerTable__desc {
+	color: #606060;
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 20px;
+}
+.careerTable__Row:last-of-type {
+	border-bottom: none;
+}
+.tab-button {
+	background-color: transparent;
+	border: none;
+	padding: 0;
+	cursor: pointer;
+	padding-bottom: 16px;
+	border-radius: none;
+	border-radius: 0 !important;
+	color: #929292;
+	font-size: 18px;
+	/* margin-bottom: -1px; */
+}
+.tab-button.active {
+	color: var(--primary);
+	border-bottom: 2px solid var(--primary);
+}
+
+/* Boost Section */
+.boost-career {
+	padding: 48px 24px;
+	background: #fffbf6;
+}
+
+/* apply Btn */
+.button-apply{
+	background-color: #f7941d;
+
+}
+.button-apply:hover{
+	background-color: #f35a1c;
+
+}
+
+@media screen and (min-width: 768px) {
+	.career {
+		flex-direction: column;
+	}
+	.careerTable {
+		padding: 68px 24px;
+	}
+	.careerList {
+		gap: 36px;
+	}
+	.careerTable__desc {
+		font-size: 16px;
+		font-weight: 400;
+		line-height: 24px;
+	}
+}
+@media screen and (min-width: 1024px) {
+	.career {
+		padding: 100px 0 0 32px;
+		flex-direction: row;
+	}
+	.career__left,
+	.career__right {
+		width: 50%;
+		height: 702px;
+		justify-content: center;
+	}
+	.careerTable {
+		padding: 68px 32px;
+	}
+	.careerTable__title {
+		gap: 16px;
+		font-size: 18px;
+		font-weight: 600;
+	}
+
+	.boost-career {
+		padding: 64px 32px;
+	}
+}
+@media screen and (min-width: 1440px) {
+	.career {
+		padding: 108px 0 0 120px;
+	}
+	.careerTable {
+		padding: 68px 120px;
+	}
+
+	.boost-career {
+		padding: 95px 120px;
+	}
+}
